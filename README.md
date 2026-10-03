@@ -1,1 +1,0 @@
-# polleria-catalogo-demo
