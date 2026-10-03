@@ -1,58 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polleria El Buen Sabor(Demo)</title>
-    <link   rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos - Pollería El Buen Sabor (Demo)</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>    
-<h1>Pollería El Buen Sabor</h1>
- <p>Pollo frito, asado y platos tradicionales en Riberalta</p>
- <span class="demo">Proyecto de ejemplo (demo)</span>
- </header>
- <main>
- <h2>Nuestra carta</h2>
- <section class="carta">
- <article class="plato">
- <h3>Pollo entero</h3>
- <p>Pollo frito o asado con papas fritas crocantes.</p>
- <p class="precio">Bs 90</p>
- </article>
- <article class="plato">
- <h3>Medio pollo</h3>
- <p>Medio pollo frito o asado con papas fritas crocantes.</p>
- <p class="precio">Bs 50</p>
- </article>
-  <article class="plato">
- <h3>Pollo económico</h3>
- <p>Pollo frito o asado con papas fritas crocantes.</p>
- <p class="precio">Bs 20</p>
- </article>
-  <article class="plato">
- <h3>Charque frito</h3>
- <p>Charque frito con arroz y ensalada.</p>
- <p class="precio">Bs 25</p>
- </article>
-  <article class="plato">
- <h3>Majadito de Charque</h3>
- <p>Delicioso Majadito de Charque batido o seco.</p>
- <p class="precio">Bs 20</p>
- </article>
- <!-- Repite el bloque article para los otros 3 platos -->
- </section>
- <section class="info">
- <h2>Horario y ubicación</h2>
- <p>Todos los días, de 11:00 a 22:00</p>
- <p>Av. Beni Mamoré, #256, Riberalta (dirección de ejemplo)</p>
- <a class="boton" href="https://wa.me/59171731376" target="_blank">
- Escríbenos por WhatsApp
- </a>
- </section>
- </main>
- <footer>
- <p>Página de ejemplo creada por ANIMON SOFTWARE. Todos los datos son ficticios.</p>
- </footer>
+  <header>
+    <h1>Pollería El Buen Sabor</h1>
+    <p>Arma tu pedido y envíalo por WhatsApp</p>
+    <span class="demo">Proyecto de ejemplo (demo)</span>
+  </header>
+  <main>
+    <h2>Elige tu pedido</h2>
+    <div id="menu" class="carta"></div>
+    <section id="resumen">
+      <h2>Tu pedido</h2>
+      <ul id="lista"></ul>
+      <p class="total">Total: Bs <span id="total">0</span></p>
+      <label for="nombre">Tu nombre</label>
+      <input id="nombre" type="text" placeholder="Ejemplo: María">
+      <label for="nota">Dirección o nota</label>
+      <input id="nota" type="text" placeholder="Ejemplo: sin ensalada">
+      <button id="enviar" class="boton">Enviar pedido por WhatsApp</button>
+    </section>
+  </main>
+ <script src="app.js"></script>
 </body>
 </html>
